@@ -17,3 +17,48 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Кликер</title>
+    <link rel="icon" href="favinco.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Обрезаем лишние рамки */
+        }
+        .container {
+            width: 100vw; /* Полная ширина окна */
+            height: 100vh; /* Полная высота окна */
+            background-color: #f0f0f0; /* Цвет фона */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            width: 90%; /* Ширина контента */
+            max-width: 600px; /* Максимальная ширина */
+            background-color: white; /* Цвет фона контента */
+            border-radius: 10px; /* Закругленные углы */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+            padding: 20px; /* Отступы внутри контента */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="container">
+                <h1>Хамстер!</h1>
+                <p>Счёт: <span id="score">0</span></p>
+                <input type="image" src="image.png" id = clickButton alt="Кнопка">
+                <button id="resetButton">Сбросить</button>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
